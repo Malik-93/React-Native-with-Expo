@@ -21,30 +21,36 @@ const { width, height } = Dimensions.get('screen');
 export default class App extends React.Component {
   constructor(props){
     super(props);
-    this.state = { fontLoading: true }
+    this.state = { fontLoaded: false }
   }
   
-  async componentWillMount() {
+  async componentDidMount() {
     await Font.loadAsync({
       Roboto: require("native-base/Fonts/Roboto.ttf"),
       Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf"),
       Ionicons: require("@expo/vector-icons/fonts/Ionicons.ttf"),
     });
-    this.setState({ fontLoading: false });
+    this.setState({ fontLoaded: true });
   }
 
-  render() {
-if( this.state.fontLoading ) {
-  console.log("App is loading the fonts")
-  return <AppLoading /> 
+render() {
+if( !this.state.fontLoaded ) {
+  return (
+    <AppLoading>
+      {  console.log ('App Loading ......') }
+    </AppLoading>
+  ) 
 }
 return (
   <View style={styles.container}>
-  {console.log ( "Now fonts are loaded" )}
+  { console.log ( "Now fonts are loaded in App" ) }
     <NavContainer />
   </View>
-);
+); 
+ 
+
 }
+
 }
 
 const AppDrawerNavigator = createDrawerNavigator({

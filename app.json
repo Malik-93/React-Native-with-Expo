@@ -10,7 +10,7 @@
     ],
     "android": {
       "package": "com.webtech.testingApp",
-      "permissions":[]
+      "permissions": []
     },
     "version": "1.0.0",
     "orientation": "portrait",
@@ -30,6 +30,6 @@
       "supportsTablet": true
     },
     "description": "This is a testing app",
-    "githubUrl": "https://github.com/Malik-93"
+    "githubUrl": "https://github.com/Malik-93/React-Native-with-Expo"
   }
 }
