@@ -9,7 +9,7 @@ export default class Share extends Component {
     static navigationOptions = {
         drawerLabel: 'Share',
         drawerIcon: () => (
-            <Ionicons name='md-share' size={32} color = "blue"
+            <Ionicons name='md-share' size={32} color = "black"
             />
         ),
     };

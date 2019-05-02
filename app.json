@@ -8,6 +8,10 @@
       "ios",
       "android"
     ],
+    "ios": {
+      "bundleIdentifier": "com.ranksol.testingApp",
+      "supportsTablet": true
+    },
     "android": {
       "package": "com.webtech.testingApp",
       "permissions": []
@@ -26,9 +30,6 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
-    },
     "description": "This is a testing app",
     "githubUrl": "https://github.com/Malik-93/React-Native-with-Expo"
   }

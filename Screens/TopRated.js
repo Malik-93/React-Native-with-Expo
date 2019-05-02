@@ -7,7 +7,7 @@ export default class TopRated extends Component {
     static navigationOptions = {
         drawerLabel: 'Top Rated',
         drawerIcon: () => (
-            <Ionicons name='md-rocket' size={32} color = "blue"
+            <Ionicons name='md-rocket' size={32} color = "black"
             />
         ),
     };

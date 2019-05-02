@@ -8,7 +8,7 @@ export default class Favourite extends Component {
         drawerIcon: () => (
               <Image
                 source={require('../assets/favourite-mark.png')}
-                style={ styles.icon } color = 'yellow'
+                style={ styles.icon } color = 'black'
               />
         ),
     };

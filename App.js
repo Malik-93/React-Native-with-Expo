@@ -15,6 +15,7 @@ import Share from './Screens/Share';
 import TermsAndConditions from './Screens/TemsAndConditions';
 import TopRated from './Screens/TopRated';
 import Settings from './Screens/Settings';
+import ItemDetails from './Screens/ItemDetails';
 
 const { width, height } = Dimensions.get('screen');
 
@@ -87,9 +88,13 @@ const AppDrawerNavigator = createDrawerNavigator({
   Settings: {
     screen: Settings
   },
+  ItemDetails: {
+    screen: ItemDetails
+  }
 },
 {
   drawerWidth: Math.min(height, width) * 0.8, // calculates 80% of the smaller side of the screen.
+  drawerHeight: Math.min(height, width) * 0.12, // calculates 80% of the smaller side of the screen.
 }
 
 )

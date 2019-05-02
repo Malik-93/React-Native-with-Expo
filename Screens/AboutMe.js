@@ -13,7 +13,7 @@ export default class AboutMe extends Component {
             //     source={require('../assets/download.jpg')}
             //     style={[styles.icon, {tintColor: tintColor}]}
             //   />
-            <Ionicons name = 'md-contact' size = {32} color = "blue"
+            <Ionicons name = 'md-contact' size = {32} color = 'black'
             />
         ),
     };

@@ -9,7 +9,7 @@ export default class MyOrders extends Component {
     static navigationOptions = {
         drawerLabel: 'My Orders',
         drawerIcon: () => (
-            <Ionicons name = "md-cart" size = {32} color = "green"  />
+            <Ionicons name = "md-cart" size = {32} color = "black"  />
             ),
     };
 

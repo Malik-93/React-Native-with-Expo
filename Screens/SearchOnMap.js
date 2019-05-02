@@ -14,7 +14,7 @@ export default class SearchOnMap extends Component {
             //     source={require('../assets/download.jpg')}
             //     style={[styles.icon, {tintColor: tintColor}]}
             //   />
-            <Ionicons name='md-map' size={32} color = "blue"
+            <Ionicons name='md-map' size={32} color = "black"
             />
         ),
     };
